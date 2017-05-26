@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Camera</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+<button ion-button (click)="takePic()">Button!</button>
+<ion-card>
+  <div style="width:360px;height:auto">
+    <img src={{base64Image}} *ngIf="base64Image"  style="text-align:center;margin:0 auto;"/>
+		    <ion-label *ngIf="base64Image" fixed>{{base64Image}} </ion-label>
+
+    </div>
+</ion-card>
+</ion-content>

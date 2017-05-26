@@ -1,0 +1,17 @@
+<!-- Generated template for the MapsDemo component -->
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Maps</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+<div>
+  {{text}}
+</div>
+<button ion-button (click)="positionMap()" style="width:100%;align-self:center">Position</button>
+ <div #map id="map" style="height:90%;"></div>
+
+</ion-content>
