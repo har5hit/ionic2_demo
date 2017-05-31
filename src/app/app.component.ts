@@ -4,9 +4,10 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { Hello } from '../pages/hello/hello';
-import { CameraPage } from '../pages/CameraClick/camera';
+import { CameraPage } from '../pages/camera/camera';
 import { Maps } from '../pages/maps/maps';
 import { Popup } from '../pages/popup/popup';
+import { QrScan } from '../pages/qr-scan/qr-scan';
 
 import { App, MenuController } from 'ionic-angular';
 
@@ -18,7 +19,8 @@ export class MyApp {
   pageList: Array<{title: string, component: any}>=[
     { title:"Camera", component:CameraPage},
     {title:"Maps",component:Maps},
-    {title:"Popup",component:Popup}
+    {title:"Popup",component:Popup},
+    {title:"QrScan", component:QrScan}
   ];
 
   @ViewChild(Nav) nav:Nav;
